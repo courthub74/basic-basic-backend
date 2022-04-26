@@ -1,0 +1,194 @@
+/* THE WHOLE SCREEN */
+.mama {
+	background-color: grey;
+	position: relative;
+	min-height: 100vh;
+}
+
+
+/* THE NAVBAR */
+nav {
+	background-color: green;
+	color: white;
+	height: 60px;
+	padding: 20px 0px 0px 0px;
+}
+
+.navtitle {
+	font-size: 35px;
+	padding: 20px 0px 0px 50px;
+	font-family: satisfy;
+}
+
+
+/* MENU ON NAVBAR */
+nav ul {
+	list-style-type: none;
+	float: right;
+	padding-right: 30px;
+	padding-top: 10px;
+}
+
+/* LIST ITEMS ON NAVBAR */
+li {
+	display: inline;
+}
+
+/* TAG FONTS */
+a {
+	display: block;
+	float: right;
+	text-decoration: none;
+	color: white;
+	font-size: x-large;
+	padding: 0 10px 0px 10px;
+	font-family: Anybody;
+}
+
+nav a:hover {
+	background-color: white;
+	color: green;
+}
+
+/* PARAGRAPHS */
+.paragraphs {
+	background-color: lightgoldenrodyellow;
+	padding: 20px 0 20px 50px;
+}
+
+#maintitle {
+	font-family: satisfy;
+	font-size: 30px;
+}
+
+#words {
+	font-family: Anybody;
+	font-size: 20px;
+	text-align: center;
+}
+
+/* SKILLS */
+.skills {
+	background-color: indianred;
+	padding: 20px 0 20px 50px;
+}
+
+#skilltitle {
+	font-family: satisfy;
+	font-size: 30px;
+}
+
+#skillslist {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+}
+
+#skill1 {
+	padding-right: 20px;
+	font-family: Anybody;
+	font-size: 30px;
+	border-right: 2px solid black;
+}
+
+#skill2 {
+	padding-right: 20px;
+	padding-left: 20px;
+	font-family: Anybody;
+	font-size: 30px;
+	border-right: 2px solid black;
+}
+
+#skill3 {
+	padding-left: 20px;
+	font-family: Anybody;
+	font-size: 30px;
+}
+
+/* PORTFOLIO */
+.portfolio {
+	background-color: lightseagreen;
+	padding: 1px 0 100px 50px;
+}
+
+#porttitle {
+	font-family: satisfy;
+	font-size: 30px;
+}
+
+#portfoliolist {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 50px;
+	font-family: Anybody;
+	font-size: 20px;
+}
+
+#porty1 {
+	display: flex;
+	flex-direction: column;
+	padding: 30px 30px 10px 30px;
+	border: 1px solid black;
+}
+
+#porty1 small a {
+	color: black;
+}
+
+
+
+#porty2 {
+	display: flex;
+	flex-direction: column;
+	padding: 30px 30px 10px 30px;
+	border: 1px solid black;
+}
+
+#porty2 small a {
+	color: black;
+}
+
+#porty3 {
+	display: flex;
+	flex-direction: column;
+	padding: 30px 30px 10px 30px;
+	border: 1px solid black;
+}
+
+#porty3 small a {
+	color: black;
+}
+
+
+
+/* FOOTER */
+footer {
+	background-color: blue;
+	color: white;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	list-style: none;
+	padding: 10px 0px 0px 0px;
+}
+
+/* MENU ON FOOTER */
+footer ul {
+	list-style-type: none;
+	float: right;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+footer a:hover {
+	background-color: white;
+	color: blue;
+}
+
+.foottitle {
+	font-size: 40px;
+	padding: 20px 0px 0px 50px;
+	font-family: satisfy;
+}
