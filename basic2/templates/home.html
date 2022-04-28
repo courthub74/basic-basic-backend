@@ -22,6 +22,7 @@
 </head>
 <body>
 
+    
 	<div class="mama">
 
 		<!-- NAVBAR -->
@@ -34,14 +35,18 @@
 			</ul>
 		</nav>
 
-
+        {% block content %}
 		<!-- MAIN PARAGRAPH -->
 			<div class="paragraphs">
 				<h3 id="maintitle">The Main Body</h3>
 				<div id="words">
-					<p>Paragraph Paragraph Paragraph Paragraph</p>
-					<p>Paragraph Paragraph Paragraph Paragraph</p>
-					<p>Paragraph Paragraph Paragraph Paragraph</p>
+                    
+                        {% if paragraph %}
+                            {% for words in paragraph %}
+                            <p>{{ words.paragraph }}</p>
+                            {% endfor %}
+                        {% endif %}
+                    
 				</div>
 			</div>
 
@@ -96,6 +101,7 @@
 				</div>
 			
 		</div>
+        {% endblock%}
 
 
 		<!-- FOOTER -->

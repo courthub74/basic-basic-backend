@@ -65,7 +65,11 @@ nav a:hover {
 	font-family: Anybody;
 	font-size: 20px;
 	text-align: center;
+	background-color: blue;
+	color: white;
+	width: 50%;
 }
+
 
 /* SKILLS */
 .skills {
