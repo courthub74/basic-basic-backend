@@ -39,15 +39,15 @@
 		<!-- MAIN PARAGRAPH -->
 			<div class="paragraphs">
 				<h3 id="maintitle">The Main Body</h3>
-				<div id="words">
-                    
-                        {% if paragraph %}
-                            {% for words in paragraph %}
-                            <p>{{ words.paragraph }}</p>
-                            {% endfor %}
-                        {% endif %}
-                    
-				</div>
+                <div id="paragraphparent">
+                    <div id="words">
+                            {% if paragraph %}
+                                {% for words in paragraph %}
+                                <p>{{ words.paragraph }}</p>
+                                {% endfor %}
+                            {% endif %}
+                    </div>
+                </div>
 			</div>
 
 		<!-- LISTED IMAGES ACROSS -->
@@ -61,17 +61,48 @@
 
 					<div id="skill1">
 						<img src="{% static 'images/ball.webp' %}" height="100" width="100" alt="skill1">
-						<p>Skill #1</p>
+                        <p id="underline">{{ skills1 }}</p>
+						<!-- if the skill1 is there -->
+                        {% if skill1 %}
+							<!-- for each skill in the skill1 model -->
+                            {% for skill in skill1 %}
+								<!-- output the skill in skill1 model -->
+                                {{ skill.skill1 }}
+
+                            {% endfor %}
+
+                        {% endif %}
+                       
 					</div>
 
 					<div id="skill2">
 						<img src="{% static 'images/dna2.webp' %}" height="100" width="100" alt="skill2">
-						<p>Skill #2</p>
+						<p id="underline">{{ skills2 }}</p>
+						<!-- if the skill2 is there -->
+						{% if skill2 %}
+							<!-- for each skill in the skill2 model -->
+                            {% for skill in skill2 %} 
+								<!-- output the skill in skill2 model -->
+                                {{ skill.skill2 }}
+
+                            {% endfor %}
+
+                        {% endif %}
 					</div>
 
 					<div id="skill3">
 						<img src="{% static 'images/world.webp' %}" height="100" width="100" alt="skill3">
-						<p>Skill #3</p>
+						<p id="underline">{{ skills3 }}</p>
+						<!-- if the skill3 is there -->
+						{% if skill3 %}
+							<!-- for each skill in the skill2 model -->
+							{% for skill in skill3 %}
+								<!-- output the skill in skill2 model -->
+								{{ skill.skill3 }}
+
+							{% endfor %}
+
+						{% endif %}
 					</div>
 				</div>
 			</div>

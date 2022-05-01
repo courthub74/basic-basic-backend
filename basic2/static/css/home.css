@@ -61,15 +61,17 @@ nav a:hover {
 	font-size: 30px;
 }
 
+#paragraphparent {
+	display: flex;
+	justify-content: center;
+}
+
 #words {
 	font-family: Anybody;
 	font-size: 20px;
 	text-align: center;
-	background-color: blue;
-	color: white;
 	width: 50%;
 }
-
 
 /* SKILLS */
 .skills {
@@ -108,6 +110,10 @@ nav a:hover {
 	padding-left: 20px;
 	font-family: Anybody;
 	font-size: 30px;
+}
+
+#underline {
+	text-decoration: underline;
 }
 
 /* PORTFOLIO */
