@@ -108,8 +108,16 @@ nav a:hover {
 
 #skill3 {
 	padding-left: 20px;
+	padding-right: 20px;
 	font-family: Anybody;
 	font-size: 30px;
+}
+
+#skill4 {
+	padding-left: 20px;
+	font-family: Anybody;
+	font-size: 30px;
+	border-left: 2px solid black;
 }
 
 #underline {

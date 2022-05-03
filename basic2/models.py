@@ -45,3 +45,12 @@ class Skill3(models.Model):
 
 def __str__(self):
     return self.skill3
+
+
+# SKILL 4 
+
+class Skill4(models.Model):
+    skill4 = models.CharField(max_length=100)
+
+def __str__(self):
+    return self.skill4

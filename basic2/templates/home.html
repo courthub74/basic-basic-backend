@@ -59,6 +59,7 @@
 
 				<div id="skillslist">
 
+					<!-- SKILL 1 -->
 					<div id="skill1">
 						<img src="{% static 'images/ball.webp' %}" height="100" width="100" alt="skill1">
                         <p id="underline">{{ skills1 }}</p>
@@ -75,6 +76,7 @@
                        
 					</div>
 
+					<!-- SKILL 2 -->
 					<div id="skill2">
 						<img src="{% static 'images/dna2.webp' %}" height="100" width="100" alt="skill2">
 						<p id="underline">{{ skills2 }}</p>
@@ -90,6 +92,7 @@
                         {% endif %}
 					</div>
 
+					<!-- SKILL 3 -->
 					<div id="skill3">
 						<img src="{% static 'images/world.webp' %}" height="100" width="100" alt="skill3">
 						<p id="underline">{{ skills3 }}</p>
@@ -102,6 +105,18 @@
 
 							{% endfor %}
 
+						{% endif %}
+					</div>
+
+					<!-- SKILL 4 -->
+					<div id="skill4">
+						<img src="{% static 'images/ball.webp' %}" height="100" width="100" alt="skill4">
+						<p id="underline">{{ skills4 }}</p>
+						<!-- if the skill4 is there -->
+						{% if skill4 %}
+							{% for skill in skill4 %}
+								{{ skill.skill4 }}
+							{% endfor %}
 						{% endif %}
 					</div>
 				</div>
