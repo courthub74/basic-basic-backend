@@ -1,6 +1,8 @@
 from operator import mod
+from unittest.util import _MAX_LENGTH
 from xml.parsers.expat import model
 from django.db import models
+from django.forms import CharField, Textarea
 
 # Create your models here.
 
@@ -54,3 +56,14 @@ class Skill4(models.Model):
 
 def __str__(self):
     return self.skill4
+
+
+#PROJECTS
+
+# PROJECT 1
+
+class Project1(models.Model):
+    project1 = models.TextField(max_length=500)
+
+def __str__(self):
+    return self.project1

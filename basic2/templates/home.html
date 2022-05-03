@@ -130,8 +130,15 @@
 				<div id="portfoliolist">
 
 					<div id="porty1">
-						<small><a href="#">Project #1</a></small>
-						<small>The Description for Project #1</small>
+						<small><a href="#">{{ project1 }}</a></small>
+						<small>
+							{{ tester1 }}
+							{% if projects1 %}
+								{% for proj in projects1 %}
+									{{ proj.projects1 }}
+								{% endfor %}
+							{% endif %}
+						</small>
 					</div>
 
 					<div id="porty2">
