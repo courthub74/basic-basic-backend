@@ -45,3 +45,13 @@ class Skill3(models.Model):
 
 def __str__(self):
     return self.skill3
+
+
+# PROJECT 1
+
+class Project(models.Model):
+    project = models.CharField(max_length=500)
+
+
+def __str__(self):
+    return self.project

@@ -8,6 +8,9 @@ from .models import Skill1
 from .models import Skill2
 from .models import Skill3
 
+# Projects
+from .models import Project
+
 # Register your models here.
 
 # PARAGRAPH
@@ -17,3 +20,4 @@ admin.site.register(Paragraph)
 admin.site.register(Skill1)
 admin.site.register(Skill2)
 admin.site.register(Skill3)
+admin.site.register(Project)

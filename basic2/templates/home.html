@@ -116,7 +116,13 @@
 
 					<div id="porty1">
 						<small><a href="#">Project #1</a></small>
-						<small>The Description for Project #1</small>
+						<small>
+							{% if project %}
+								{% for project in project %}
+									{{ project.project }}
+								{% endfor %}
+							{% endif %}
+						</small>
 					</div>
 
 					<div id="porty2">
