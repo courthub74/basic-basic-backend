@@ -10,7 +10,7 @@ from .models import Skill3
 from .models import Skill4
 
 #PORTFOLIO
-from .models import Project1
+from .models import Project
 
 # Register your models here.
 
@@ -24,4 +24,4 @@ admin.site.register(Skill3)
 admin.site.register(Skill4)
 
 #PORTFOLIO
-admin.site.register(Project1)
+admin.site.register(Project)

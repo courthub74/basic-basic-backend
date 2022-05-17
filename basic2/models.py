@@ -62,8 +62,8 @@ def __str__(self):
 
 # PROJECT 1
 
-class Project1(models.Model):
-    project1 = models.TextField(max_length=500)
+class Project(models.Model):
+    project = models.TextField(max_length=500)
 
 def __str__(self):
-    return self.project1
+    return self.project

@@ -10,7 +10,7 @@ from .models import Skill3
 from .models import Skill4
 
 #Projects
-from .models import Project1
+from .models import Project
 
 
 
@@ -30,9 +30,14 @@ def home(request):
 
     #Projects
     project1 = "Project One"
-    tester1 = "This is the Project1 description"
-    projects1 = Project1.objects.filter(pk=1)
+    projects = Project.objects.all
     return render(request, "home.html", {'paragraph': paragraph, 'skill1': skill1,
                                          'skills1': skills1, 'skill2': skill2, 'skills2': skills2, 
                                                 'skill3': skill3, 'skills3': skills3, 'skills4': skills4, 
-                                                        'skill4': skill4, 'project1': project1, 'projects1': projects1, 'tester1': tester1})
+                                                        'skill4': skill4, 'project1': project1, 'projects': projects})
+
+
+
+#BLOG
+def blog(request):
+    return render(request, "blog.html", {})

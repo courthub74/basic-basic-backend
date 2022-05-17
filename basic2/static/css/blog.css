@@ -50,6 +50,60 @@ nav a:hover {
 	color: green;
 }
 
+
+/* THE WHOLE SCREEN */
+.mama {
+	background-color: grey;
+	position: relative;
+	min-height: 100vh;
+}
+
+
+/* THE NAVBAR */
+nav {
+	background-color: green;
+	color: white;
+	height: 60px;
+    width: 100%;
+	padding: 20px 0px 0px 0px;
+}
+
+.navtitle {
+	font-size: 35px;
+	padding: 20px 0px 0px 50px;
+	font-family: satisfy;
+}
+
+
+/* MENU ON NAVBAR */
+nav ul {
+	list-style-type: none;
+	float: right;
+	padding-right: 30px;
+	padding-top: 10px;
+}
+
+/* LIST ITEMS ON NAVBAR */
+li {
+	display: inline;
+}
+
+/* TAG FONTS */
+a {
+	display: block;
+	float: right;
+	text-decoration: none;
+	color: white;
+	font-size: x-large;
+	padding: 0 10px 0px 10px;
+	font-family: Anybody;
+}
+
+nav a:hover {
+	background-color: white;
+	color: green;
+}
+
 /* PARAGRAPHS */
 .paragraphs {
 	background-color: lightgoldenrodyellow;
@@ -211,3 +265,76 @@ footer a:hover {
 	font-family: satisfy;
 }
 
+
+
+/* BLOG  */
+.blogbody {
+	background-color: aquamarine;
+	color: red;
+    padding: 20px 0px 20px 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#bloginput {
+    width: 300px;
+    height: 100px;
+    border: 1px solid red;
+    padding-bottom: 50px;
+}
+
+#blogbutton {
+    width: 200px;
+    height: 50px;
+    border-radius: 20%;
+    background-color: red;
+    color: white;
+}
+
+.blogoutty {
+    background-color: yellow;
+    padding: 20px 0 20px 50px;
+    width: 100%;
+}
+
+
+
+
+
+/* FOOTER */
+footer {
+	background-color: blue;
+	color: white;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	list-style: none;
+	padding: 10px 0px 0px 0px;
+}
+
+/* MENU ON FOOTER */
+footer ul {
+	list-style-type: none;
+	float: right;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+footer a:hover {
+	background-color: white;
+	color: blue;
+}
+
+.foottitle {
+	font-size: 40px;
+	padding: 20px 0px 0px 50px;
+	font-family: satisfy;
+}
+
+/* BLOG  */
+.blogbody {
+	background-color: aquamarine;
+	color: red;
+}

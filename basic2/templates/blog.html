@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static '/css/blog.css' %}">
+
+</head>
+<body>
+
+    <!-- NAVBAR -->
+		<nav>
+			<span class="navtitle">NavBar</span>
+			<ul>
+                <li><a href="#">About</a></li>
+				<li><a href="#">Gallery</a></li>
+                <li><a href="/">Home</a></li>
+			</ul>
+		</nav>
+
+
+
+        <div class="blogbody">
+
+           
+                <h1>Blog Entry</h1>
+
+                <input id="bloginput"></input>
+
+                <button id="blogbutton">Post Blog</button>
+
+
+        </div>
+
+
+        <div class="blogoutty">
+
+                <h1>Blog Output</h1>
+
+                <p>This is where the blog output will be</p>
+
+        </div>
+
+
+    
+    <!-- FOOTER -->
+		<footer>
+			<span class="foottitle">Footer</span>
+			<ul>
+				<li><a href="#">Careers</a></li>
+				<li><a href="#">Charities</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Social Media</a></li>
+			</ul>
+		</footer>
+    
+</body>
+</html>
