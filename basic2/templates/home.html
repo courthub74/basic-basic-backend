@@ -130,11 +130,26 @@
 				<div id="portfoliolist">
 
 					<div id="porty1">
+<<<<<<< HEAD
+						<small><a href="#">Project #1</a></small>
+						<small>
+							{% if project %}
+								{% for project in project %}
+									{{ project.project }}
+=======
 						<small><a href="#">{{ project1 }}</a></small>
 						<small>
+<<<<<<< HEAD
 							{% if projects %}
 								{% for project in projects %}
 									{{ project.projects }}
+=======
+							{{ tester1 }}
+							{% if projects1 %}
+								{% for proj in projects1 %}
+									{{ proj.projects1 }}
+>>>>>>> e77928d5266963a203a859326f0fecd73b032041
+>>>>>>> f7c0d89cd928d0a5ca8172d0cb3b76a2cecc7c06
 								{% endfor %}
 							{% endif %}
 						</small>

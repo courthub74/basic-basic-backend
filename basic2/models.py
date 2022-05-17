@@ -49,6 +49,16 @@ def __str__(self):
     return self.skill3
 
 
+<<<<<<< HEAD
+# PROJECT 1
+
+class Project(models.Model):
+    project = models.CharField(max_length=500)
+
+
+def __str__(self):
+    return self.project
+=======
 # SKILL 4 
 
 class Skill4(models.Model):
@@ -66,4 +76,9 @@ class Project(models.Model):
     project = models.TextField(max_length=500)
 
 def __str__(self):
+<<<<<<< HEAD
     return self.project
+=======
+    return self.project1
+>>>>>>> e77928d5266963a203a859326f0fecd73b032041
+>>>>>>> f7c0d89cd928d0a5ca8172d0cb3b76a2cecc7c06
